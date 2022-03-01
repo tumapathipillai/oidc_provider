@@ -1,0 +1,16 @@
+<head>
+  <link rel="stylesheet" href="<%- uri %>styles/index.css">
+</head>
+<body>
+  <span class="container">
+    <img src="<%- uri %>img/logo.png">
+    <form autocomplete="off" action="/interaction/<%= uid %>/login" method="post">
+      <p class="error"><%= __(error) %></p>
+      <label for="login"><%= __('username') %></label>
+      <input required type="text" name="login" placeholder="<%= __('enter_username') %>" <% if (!params.login_hint) { %>autofocus="on"<% } else { %> value="<%= params.login_hint %>" <% } %>>
+      <label for="password"><%= __('password') %></label>
+      <input required type="password" name="password" placeholder="<%= __('enter_password') %>" <% if (params.login_hint) { %>autofocus="on"<% } %>>
+      <button type="submit" class="login login-submit"><%= __('authenticate') %></button>
+    </form>
+  </span>
+</body>

@@ -1,0 +1,17 @@
+<head>
+  <link rel="stylesheet" href="<%- uri %>styles/index.css">
+</head>
+<body>
+  <span class="container">
+    <img src="<%- uri %>img/logo.png">
+    <p class="title"><%= __('accept_message') %></p>
+    <ul>
+      <% details.forEach((detail) => { %>
+        <li><%= __(detail) %></li>
+      <% }) %>
+    </ul>
+    <form autocomplete="off" action="/interaction/<%= uid %>/confirm" method="post">
+      <button type="submit" class="login login-submit"><%= __('accept') %></button>
+    </form>  
+  </span>
+</body>

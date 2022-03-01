@@ -1,0 +1,95 @@
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: 'Poppins';
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.error {
+  font-weight: bold;
+  text-align: center;
+  color: rgb(189, 51, 51);
+}
+
+.title {
+  color: white;
+  text-align: justify;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin-top: 50px;
+  width: 400px;
+  background-color: #171717;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  color: white;
+}
+
+input {
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 10px;
+  color:black;
+  border: 0;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: #777777;
+  font-weight: bold;
+}
+
+input:focus {
+  outline: 3px solid #476CFC;
+}
+
+button {
+  transition: all .5s;
+  background-color: #476CFC;
+  border: 0;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: white;
+}
+
+button:hover {
+  background-color: #68ADF7;
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: #a53030;
+  margin-left: 10px;
+}
+
+.cancel:hover {
+  background-color: #f76868;
+}
+
+li {
+  color: white;
+}

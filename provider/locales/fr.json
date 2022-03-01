@@ -1,0 +1,14 @@
+{
+	"username": "Nom d'utilisateur",
+	"enter_username": "Entrez votre login",
+	"password": "Mot de passe",
+	"enter_password": "Entrez votre mot de passe",
+	"username_password_error": "Identifiant ou mot de passe incorrect",
+	"authenticate": "S'AUTHENTIFIER",
+	"accept_message": "En cliquant sur Accepter, vous autorisez le site à accéder au informations suivantes :",
+	"accept": "ACCEPTER",
+	"lastName": "Votre nom",
+	"firstName": "Votre prénom",
+	"email": "Votre email",
+	"": ""
+}

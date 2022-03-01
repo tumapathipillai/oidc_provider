@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Infos</title>
+  </head>
+  <body>
+    <div
+      style="
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <h1>Site client 1 connecté</h1>
+      <p
+        style="
+          padding: 60px;
+          background-color: rgb(253, 151, 151);
+          border-radius: 20px;
+          width: fit-content;
+        "
+      >
+        Bonjour <%- prenom %> <%- nom %>
+      </p>
+      <p>Les informations suivantes n'ont pas pu être récuperées</p>
+      <ul>
+        <li>Email : <%- email %></li>
+      </ul>
+      <button onclick="window.location.href = '/disconnect'">
+        Se déconnecter
+      </button>
+    </div>
+  </body>
+</html>
